@@ -174,7 +174,8 @@ body {
 }
 
 .featured-left > span,
-.recommendation-top__left > span {
+.recommendation-top__left > span,
+.chef-right__title > span {
   color: var(--blue);
   font-weight: 600;
   letter-spacing: 1px;
@@ -182,7 +183,8 @@ body {
 }
 
 .featured-left h1,
-.recommendation-top__left h1 {
+.recommendation-top__left h1,
+.chef-right__title h1 {
   font-size: 28px;
   color: var(--dark);
   font-weight: 600;
@@ -266,7 +268,129 @@ body {
 
 .recommendation__card-btn,
 .btn-card {
-  margin-top: -30px;
+  margin-top: 20px;
+}
+
+.chef-left {
+  position: relative;
+}
+
+.chef-left,
+img.banner {
+  border-radius: 24px;
+}
+
+.chef-left__card-top {
+  position: absolute;
+  width: 179px;
+  height: 203px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  top: 20px;
+  right: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.chef-left__card-top div h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.chef-left__card-top div span {
+  color: var(--lightDark);
+}
+
+.rounded-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(253, 200, 134, 0.15);
+}
+
+.card-left__card-bottom {
+  position: absolute;
+  width: 330px;
+  height: 180px;
+  background: #ffffff;
+  border-radius: 24px;
+  bottom: 20px;
+  left: -60px;
+  padding: 24px;
+}
+
+.card-left__card-bottom img {
+  border-radius: 12px;
+}
+
+.card-left__card-bottom-info {
+  height: 80%;
+  margin-left: 20px;
+}
+
+.card-left__card-bottom-info div span {
+  color: var(--lightDark);
+}
+
+.card-left__card-bottom-info div h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.link-bottom-card {
+  text-decoration: none;
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.link-bottom-card span {
+  margin-right: 5px;
+}
+
+.link-bottom-card:hover {
+  color: var(--orange);
+}
+
+.chef-right {
+  margin-left: 84px;
+}
+
+.chef-right__list {
+  padding: 24px;
+  margin-top: 32px;
+}
+
+.chef-right__list.active {
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.chef-right__list div span.info-span-2 {
+  text-transform: uppercase;
+  color: var(--lightDark);
+  font-weight: 500;
+}
+
+.chef-right__location span {
+  color: var(--lightDark);
+}
+
+.chef-right__list div h5 {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.chef-right__btn,
+.btn-card {
+  margin-top: 62px;
 }
 
 /* custom */
