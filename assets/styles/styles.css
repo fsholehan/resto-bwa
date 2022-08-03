@@ -54,26 +54,37 @@ body {
   padding: 24px;
 }
 
-.header-carousel__card-rating span.rating-1 {
+.header-carousel__card-rating span.rating-1,
+.featured-right__card-rating span.rating-1,
+.recommendation-bottom__card-rating span.rating-1 {
   font-weight: 600;
   color: #ffc107;
   margin-left: 2px;
   font-size: 18px;
 }
 
-.header-carousel__card-body h1 {
+.header-carousel__card-body h1,
+.featured-right__card-body h1,
+.recommendation-bottom__card-body h1 {
   font-size: 22px;
   color: var(--dark);
   font-weight: 600;
 }
 
-.header-carousel__card-body h2 {
+.recommendation-bottom__card-body h1 {
+  font-size: 18px;
+}
+
+.header-carousel__card-body h2,
+.recommendation-bottom__card-body h2 {
   font-size: 18px;
   color: var(--lightDark);
   font-weight: 600;
 }
 
-.header-carousel__card-body div span {
+.header-carousel__card-body div span,
+.featured-right__card-body div span,
+.recommendation-bottom__card-body div span {
   color: var(--lightDark);
 }
 
@@ -98,7 +109,7 @@ body {
 .choose-us__top span {
   color: var(--blue);
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -162,14 +173,16 @@ body {
   color: var(--dark);
 }
 
-.featured-left span {
+.featured-left > span,
+.recommendation-top__left > span {
   color: var(--blue);
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.featured-left h1 {
+.featured-left h1,
+.recommendation-top__left h1 {
   font-size: 28px;
   color: var(--dark);
   font-weight: 600;
@@ -184,6 +197,76 @@ body {
 
 .featured-left__btn {
   margin-top: 56px;
+}
+
+.featured-right {
+  margin-left: -12px;
+}
+
+.recommendation-bottom {
+  width: 375px;
+  height: 415px;
+  margin-top: 34px;
+}
+
+.featured-right__hero-1,
+.recommendation-bottom__hero-1 {
+  position: relative;
+}
+
+.featured-right__hero-1 img,
+.recommendation-bottom img {
+  border-radius: 24px;
+}
+
+.recommendation-bottom img.img-hero {
+  width: 375px;
+}
+
+.featured-right__card,
+.recommendation-bottom__card {
+  position: absolute;
+  top: 68%;
+  background-color: #ffffff;
+  height: 131px;
+  border-radius: 24px;
+  width: 352px;
+  left: 8%;
+}
+
+.recommendation-bottom__card {
+  left: 12px;
+}
+
+.recommendation-bottom__card {
+  top: 60%;
+}
+
+.featured-right__btn,
+.recommendation-bottom__btn {
+  width: 36px;
+  height: 36px;
+  background: var(--orange);
+  border-radius: 9px;
+}
+
+.featured-right__hero-2 img {
+  border-radius: 24px;
+  margin-left: 80px;
+}
+
+.recommendation-top__right-filter {
+  background-color: #f2f2f2;
+  padding: 20px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: var(--lightDark);
+  font-weight: 500;
+}
+
+.recommendation__card-btn,
+.btn-card {
+  margin-top: -30px;
 }
 
 /* custom */
